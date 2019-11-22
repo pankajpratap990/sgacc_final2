@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up">
+
+    <EditText
+        android:id="@+id/email_su"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/signup_su"
+        app:layout_constraintTop_toBottomOf="@+id/signup_su"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <EditText
+        android:id="@+id/password_su"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email_su"
+        app:layout_constraintTop_toBottomOf="@+id/email_su"
+        app:layout_constraintVertical_bias="0.1" />
+
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="290dp"
+        android:layout_height="41dp"
+        android:background="@drawable/login_signup_gradient"
+        android:onClick="signup_ep"
+        android:text="Sign up"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showpassword"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/signup_su"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/orlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or log in"
+        android:onClick="orlogin"
+        android:textColor="#a025d4"
+        app:layout_constraintBottom_toBottomOf="@+id/signup_su"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toEndOf="@+id/signup_su"
+        app:layout_constraintTop_toTopOf="@+id/signup_su" />
+
+    <TextView
+        android:id="@+id/showpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show password"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/password_su"
+        app:layout_constraintTop_toBottomOf="@+id/password_su"
+        app:layout_constraintVertical_bias="0.1" />
+
+
+    <ImageView
+        android:id="@+id/tickless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="changetick"
+        app:layout_constraintBottom_toBottomOf="@+id/showpassword"
+        app:layout_constraintEnd_toStartOf="@+id/showpassword"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/showpassword"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/signup_notick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

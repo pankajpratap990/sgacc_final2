@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adopt">
+
+    <fragment
+        android:id="@+id/adopt_app_bar"
+        android:name="com.example.sgacc_final.frag_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <fragment
+        android:id="@+id/adopt_bottom_nav"
+        android:name="com.example.sgacc_final.frag_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/adopt_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/adopt_bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adopt_app_bar">
+
+        <ImageView
+            android:id="@+id/adopt_image"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            app:layout_constraintBottom_toBottomOf="@+id/adopt_layout"
+            app:layout_constraintEnd_toEndOf="@id/adopt_layout"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/adopt_layout"
+            app:layout_constraintTop_toTopOf="@+id/adopt_layout"
+            app:layout_constraintVertical_bias="0"
+            app:srcCompat="@drawable/puppy" />
+
+        <Button
+            android:id="@+id/adopt_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_signup_gradient"
+            android:text="Adopt"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/adopt_image"
+            app:layout_constraintEnd_toEndOf="@+id/arrow"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/adopt_image"
+            app:layout_constraintTop_toBottomOf="@+id/arrow"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/adopt_image"
+            app:layout_constraintEnd_toEndOf="@+id/adopt_image"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="@+id/adopt_image"
+            app:layout_constraintTop_toTopOf="@+id/adopt_image"
+            app:layout_constraintVertical_bias="0.4"
+            app:srcCompat="@drawable/adopt_arrow" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="340dp"
+            android:layout_height="80dp"
+            android:background="@drawable/adopt_gradient"
+            android:lineSpacingExtra="5dp"
+            android:padding="10dp"
+            android:text="Text View sidf sd   af sd fa sdfdsf a dfa f sd f adsf adsf asd f adsf asdf a df adf asdf as df adf asd f asdf adf sd f asdf asd f"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/adopt_layout"
+            app:layout_constraintEnd_toEndOf="@id/adopt_layout"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/adopt_layout"
+            app:layout_constraintTop_toBottomOf="@+id/adopt_image"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <ImageView
+            android:id="@+id/box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/adopt_re"
+            app:layout_constraintEnd_toEndOf="@id/adopt_layout"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@id/adopt_layout"
+            app:layout_constraintTop_toBottomOf="@+id/msg"
+            app:layout_constraintVertical_bias="0.3"
+            app:srcCompat="@drawable/adopt_box" />
+
+        <ImageView
+            android:id="@+id/box2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/adopt_re"
+            app:layout_constraintEnd_toEndOf="@+id/box1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/box1"
+            app:layout_constraintTop_toBottomOf="@+id/box1"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/adopt_box" />
+
+        <ImageView
+            android:id="@+id/box3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/box1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/box1"
+            app:layout_constraintTop_toTopOf="@+id/box1"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/adopt_box" />
+
+        <ImageView
+            android:id="@+id/box4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/adopt_re"
+            app:layout_constraintEnd_toEndOf="@+id/box3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/box3"
+            app:layout_constraintTop_toBottomOf="@+id/box3"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/adopt_box" />
+
+        <TextView
+            android:id="@+id/detail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="TextView"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/box1"
+            app:layout_constraintStart_toEndOf="@+id/box1"
+            app:layout_constraintTop_toTopOf="@+id/box1"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/detail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="TextView"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/box2"
+            app:layout_constraintStart_toEndOf="@+id/box2"
+            app:layout_constraintTop_toTopOf="@+id/box2"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/detail3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="TextView"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/box3"
+            app:layout_constraintStart_toEndOf="@+id/box3"
+            app:layout_constraintTop_toTopOf="@+id/box3"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/detail4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="TextView"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/box4"
+            app:layout_constraintStart_toEndOf="@+id/box4"
+            app:layout_constraintTop_toTopOf="@+id/box4"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/adopt_re"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/home_adopt_gradient"
+            app:layout_constraintBottom_toBottomOf="@id/adopt_layout"
+            app:layout_constraintEnd_toEndOf="@id/adopt_layout"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/adopt_layout"
+            app:layout_constraintTop_toTopOf="@id/adopt_layout"
+            app:layout_constraintVertical_bias="1">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/frag_circle" />
+
+    <ImageView
+        android:id="@+id/adopticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/circle"
+        app:layout_constraintEnd_toEndOf="@+id/circle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/circle"
+        app:layout_constraintTop_toTopOf="@+id/circle"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/frag_adopt" />
+
+    <TextView
+        android:id="@+id/adopt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adopt"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/circle"
+        app:layout_constraintEnd_toEndOf="@+id/circle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/circle"
+        app:layout_constraintTop_toTopOf="@+id/circle"
+        app:layout_constraintVertical_bias="0.85" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

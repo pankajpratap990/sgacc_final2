@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bird_image"
+        android:layout_width="260dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/bird" />
+
+    <ImageView
+        android:id="@+id/sgacc_logo"
+        android:layout_width="230dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bird_image"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/bird_image"
+        app:layout_constraintTop_toBottomOf="@+id/bird_image"
+        app:layout_constraintVertical_bias="0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/sgacc_name"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="Sanjay Gandhi Animal Care Centre"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sgacc_logo"
+        app:layout_constraintEnd_toEndOf="@+id/sgacc_logo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/sgacc_logo"
+        app:layout_constraintTop_toTopOf="@+id/sgacc_logo"
+        app:layout_constraintVertical_bias="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

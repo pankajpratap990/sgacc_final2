@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "327008112754",
+    "firebase_url": "https://sgaccapp.firebaseio.com",
+    "project_id": "sgaccapp",
+    "storage_bucket": "sgaccapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327008112754:android:92d26000f816eab8",
+        "android_client_info": {
+          "package_name": "com.example.sgacc_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327008112754-jhdvg8hg8hlpr75ee2go05glk7p4q70q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sgacc_final",
+            "certificate_hash": "7d9c5aef74181470058945941665d81c6e69b572"
+          }
+        },
+        {
+          "client_id": "327008112754-179f601ta3hr0e5g9rhtphugf9v00jvs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdOdSDBWTmjwZYTN-rU60zTxr60hFhai8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327008112754-179f601ta3hr0e5g9rhtphugf9v00jvs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

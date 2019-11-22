@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".healthcare">
+
+    <fragment
+        android:id="@+id/healthcare_app_bar"
+        android:name="com.example.sgacc_final.frag_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <fragment
+        android:id="@+id/healthcare_bottom_nav"
+        android:name="com.example.sgacc_final.frag_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/frag_circle" />
+
+    <ImageView
+        android:id="@+id/adopticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="adopt"
+        app:layout_constraintBottom_toBottomOf="@+id/circle"
+        app:layout_constraintEnd_toEndOf="@+id/circle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/circle"
+        app:layout_constraintTop_toTopOf="@+id/circle"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/frag_adopt" />
+
+    <TextView
+        android:id="@+id/adopt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="adopt"
+        android:text="Adopt"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/circle"
+        app:layout_constraintEnd_toEndOf="@+id/circle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/circle"
+        app:layout_constraintTop_toTopOf="@+id/circle"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <Button
+        android:id="@+id/diet_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/login_signup_gradient"
+        android:gravity="center"
+        android:text="DIET"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/healthcare_bottom_nav"
+        app:layout_constraintEnd_toEndOf="@+id/diet"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/diet"
+        app:layout_constraintTop_toBottomOf="@+id/diet"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ImageView
+        android:id="@+id/diet"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/healthcare_bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/healthcare_app_bar"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/healthcare_diet" />
+
+    <ImageView
+        android:id="@+id/grooming"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/healthcare_bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.70"
+        app:layout_constraintStart_toEndOf="@+id/diet"
+        app:layout_constraintTop_toBottomOf="@+id/healthcare_app_bar"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/healthcare_groom" />
+
+    <Button
+        android:id="@+id/grooming_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/login_signup_gradient"
+        android:gravity="center"
+        android:text="GROOMING"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/healthcare_bottom_nav"
+        app:layout_constraintEnd_toEndOf="@+id/grooming"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/grooming"
+        app:layout_constraintTop_toBottomOf="@+id/grooming"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ImageView
+        android:id="@+id/dosndonts"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/healthcare_bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diet"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/healthcare_dodon" />
+
+    <Button
+        android:id="@+id/dosndonts_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/login_signup_gradient"
+        android:gravity="center"
+        android:text="DO'S AND DONT'S"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/healthcare_bottom_nav"
+        app:layout_constraintEnd_toEndOf="@+id/dosndonts"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/dosndonts"
+        app:layout_constraintTop_toBottomOf="@+id/dosndonts"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <ImageView
+        android:id="@+id/vaccine"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/healthcare_bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/healthcare_app_bar"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/healthcare_vaccine" />
+
+    <Button
+        android:id="@+id/vaccine_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/login_signup_gradient"
+        android:gravity="center"
+        android:text="VACCINATIONS"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/healthcare_bottom_nav"
+        app:layout_constraintEnd_toEndOf="@+id/vaccine"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/vaccine"
+        app:layout_constraintTop_toBottomOf="@+id/vaccine"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/training"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/healthcare_bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/dosndonts"
+        app:layout_constraintTop_toBottomOf="@+id/grooming"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/healthcare_train" />
+
+    <Button
+        android:id="@+id/training_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/login_signup_gradient"
+        android:text="Training"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/healthcare_bottom_nav"
+        app:layout_constraintEnd_toEndOf="@+id/training"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/training"
+        app:layout_constraintTop_toBottomOf="@+id/training"
+        app:layout_constraintVertical_bias="0.07" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

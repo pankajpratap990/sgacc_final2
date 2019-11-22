@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">327008112754-179f601ta3hr0e5g9rhtphugf9v00jvs.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://sgaccapp.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">327008112754</string>
+    <string name="google_api_key" translatable="false">AIzaSyBdOdSDBWTmjwZYTN-rU60zTxr60hFhai8</string>
+    <string name="google_app_id" translatable="false">1:327008112754:android:92d26000f816eab8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBdOdSDBWTmjwZYTN-rU60zTxr60hFhai8</string>
+    <string name="google_storage_bucket" translatable="false">sgaccapp.appspot.com</string>
+    <string name="project_id" translatable="false">sgaccapp</string>
+</resources>
